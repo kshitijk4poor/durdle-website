@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* ===== Scrollbar CSS ===== */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #393a3c #0f1012;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 11px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #0f1012;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #393a3c;
+    border-radius: 16px;
+    border: 0px solid #ffffff;
+  }
+  /* ===== Scrollbar CSS ===== */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#0F1012;  
+}
+.container{
+    width: 100%;
+    min-height: 100%;
+    padding-top: 12%;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1{
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+color: #FFFFFF;
+}
+.row{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3vh 0;
+}
+img{ position: relative;
+}
+button{ margin-top:5vh;
+    width: 275px;
+    height: 72px;
+    border:0;
+    border-radius: 10px;
+    padding:10px 5px;
+    background: linear-gradient(to left, rgba(33,147,176,1) 0%, rgba(0,212,255,1) 100%);
+    cursor:pointer;
+    font-style: normal;
+font-weight: bold;
+font-size: 36px;
+color:white;
+transition: width 0.5s;
+}
+button img{
+    width: 70px;
+    display:none; 
+}
+button:hover img{
+    display:block;
+}
+button:hover{
+    width: 320px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    font-size: 24px;
+}
